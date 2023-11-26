@@ -4,6 +4,7 @@ const port = 1234;
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const auth = require("./roles/role");
+const sequelize = require("./configuration/dbconnection");
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
